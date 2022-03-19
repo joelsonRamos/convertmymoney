@@ -1,26 +1,26 @@
-body {
+body{
     text-align: center;
 }
-h1 img {
+h1 img{
     width: 489px;
     margin: 20px;
-
 }
-input {
+input{
     border: 1px solid #000000;
     background: #fdfdfd;
-    font-size: 24px;
+    font-size: 20px;
     padding: 10px;
     margin: 4px;
+
 }
-button {
+button{
     border: 1px solid #000000;
     background: #d8d8d8;
     font-size: 20px;
     padding: 10px;
 }
-.result {
-    border: 1px solid #d8d8d8;
+.result{
     padding: 10px;
+    border: 1px solid #d8d8d8;
     background: #fdfdfd;
 }
