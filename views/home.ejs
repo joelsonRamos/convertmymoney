@@ -1,8 +1,46 @@
-<%- include('header') %>
-<form method="GET" action="cotacao">
-    <input name="cotacao" placeholder="Cotação dolar" value="<%= cotacao %>"/><br>
-    <input name="quantidade" placeholder="Quantidade de dolares"/><br>
-    <button>Converter!</button>
 
-</form>
+<%- include('header') %>
+
+
+<div class="container">
+    <nav class="navbar navbar-light ">
+        <div class="container-fluid">
+            <h1><a href="/"><img class="headerimg" src="/images/logo.png" alt="Convert My Money"></a></h1>
+        </div>
+      </nav>
+    
+    <div class="row tela justify-content-center">
+        <div class="col-sm-6 col-md-5 col-lg-6 ">
+            <form class="m-4" method="GET" action="cotacao">
+                <div class="mb-3">
+                    <label for="exampleInputEmail1" class="form-label font-weight-bold">Cotação</label>
+                    <input type="number" placeholder="Cotação dolar" name="cotacao" value="<%= cotacao %>" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+                    <div id="emailHelp" class="form-text">Favor preencher a cotação.</div>
+                </div>
+                <div class="mb-3">
+                    <label for="exampleInputEmail2" class="form-label font-weight-bold">Quantidade</label>
+                    <input type="number" placeholder="Quantidade de dolares" name="quantidade" value="<%= cotacao %>" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp1" required>
+                    <div id="emailHelp1" class="form-text">Favor preencher a quantidade.</div>
+                </div>
+                <div class="mb-3 d-flex justify-content-center">
+                    <button class="btn btn-primary btn-lg">Converter!</button>
+                </div>
+            </form>
+        </div>
+        <div class="col d-flex align-items-center justify-content-center convertimage">
+            <figure class="figure">
+                <img src="/images/converte2.png" class="converter figure-img img-fluid rounded" alt="ConvertMyMoney">
+            </figure>
+        </div>
+    </div>
+
+    <!-- <form method="GET" action="cotacao">
+        <input name="cotacao" placeholder="Cotação dolar" value="<%= cotacao %>"/><br>
+        <input name="quantidade" placeholder="Quantidade de dolares"/><br>
+        <button color="primary"
+        outline>Converter!</button>
+    </form> -->
+
+</div>
+
 <%- include('footer') %>

@@ -1,12 +1,55 @@
 <%- include('header') %>
-<div class="result">
-    <% if(error){ %>
-        <%= error %>
-    <% }else{ %>
-        <%= quantidade %> 
-        dolares na cotação: <%= cotacao %>
-        é iqual a: <%= conversao %> em Reais
-    <% } %>
+
+
+<div class="container">
+    <nav class="navbar navbar-light ">
+        <div class="container-fluid">
+            <h1><a href="/"><img class="headerimg" src="/images/logo.png" alt="Convert My Money"></a></h1>
+        </div>
+    </nav>
+    
+    <div class="row tela justify-content-center">
+        <div class="col-sm-6 col-md-5 col-lg-6">
+            <div class="m-4">
+                <% if(error){ %>
+                    <div class="alert alert-danger" role="alert">
+                        <%= error %>
+                    </div>
+                <% }else{ %>
+                    <div class="card text-white bg-dark align-items-center">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="card-body">
+                                    <h5 class="card-title h1">$ <%= quantidade %> </h5>
+                                    <h6 class="card-subtitle mb-4 ">cotação de R$ <%= cotacao %></h6>
+                                    <p class="h1"> R$ <%= conversao %></p>
+                                </div>
+
+                            </div>
+                            <!-- <div class="col-md-4">
+                                    <figure class="figure">
+                                        <img src="/images/Cifrao_symbol.svg.png" class=" figure-img img-fluid rounded" alt="ConvertMyMoney">
+                                    </figure>
+                                
+                            </div> -->
+                        </div>
+                        
+                    </div>
+                <% } %>
+                <div class="m-3 d-flex justify-content-center">
+                    <a href='/'><button class="btn btn-primary btn-lg">Voltar</button></a>
+                </div>
+
+            </div>
+
+        </div>
+        <div class="col d-flex align-items-center justify-content-center convertimage">
+            <figure class="figure">
+                <img src="/images/converte2.png" class="converter figure-img img-fluid rounded" alt="ConvertMyMoney">
+            </figure>
+        </div>
+    </div>
+
 </div>
 
 <%- include('footer') %>

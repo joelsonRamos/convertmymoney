@@ -1,6 +1,4 @@
-body{
-    text-align: center;
-}
+
 h1 img{
     width: 489px;
     margin: 20px;
@@ -23,4 +21,26 @@ button{
     padding: 10px;
     border: 1px solid #d8d8d8;
     background: #fdfdfd;
+}
+.tela{
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0,0,0,.5)
+}
+.converter{
+    height: 15rem;
+}
+.convertimage{
+    background-color: #38184C;
+    border-radius:0px 10px 10px 0px;
+}
+
+@media only screen and (max-width: 600px) {
+    .convertimage{
+        visibility:hidden;
+    }
+    .headerimg{
+        width: 15rem;
+        height: 3rem;
+    }
+ 
 }
